@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="form.css">
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Email</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body class="body">
+    <form id="form">
+      <h1 class="email form_text">Email</h1>
+      <input type="email" class="inp_email input _req _email" placeholder="your_email@gmail.com" ><br><br>
+    
+      <h1 class="vk_1 form_text">Ссылка на ваш Вк</h1>
+      <h1 class="vk_2 form_text">Для связи с вами</h1>
+      <input type="text" class="inp_vk input _req" placeholder="https://vk.com/obrechony"><br><br>
+    
+      <h1 class="fullname form_text">Ваше ФИО</h1>
+      <input type="text" class="inp_fullname input _req" placeholder="Иван Иванов Иванович"><br><br>
+      
+      <h1 class="country form_text">Страна</h1>
+      <input type="text" class="inp_country input _req" placeholder="Россия"><br><br>
+
+      <h1 class="address form_text">Ваш адрес</h1>
+      <input type="text" class="inp_address input _req" placeholder="Россия, Москва, ул. Ленина, 1"><br><br>
+
+      <h1 class="index form_text">Почтовый индекс</h1>
+      <input type="text" class="inp_index input _req" placeholder="143350"><br><br>
+
+      <h1 class="phone form_text">Ваш телефон</h1>
+      <input type="text" class="inp_phone input _req" placeholder="+7 (999) 999-99-99"><br><br>
+
+      <h1 class="comment form_text">Коментарий к заказу (необязательно)</h1>
+      <textarea type="text" class="inp_coment"></textarea><br><br>
+    
+      <button type="submit" class="btnSend">Оформить заказ</button>
+    </form>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+  </body>
+</html>

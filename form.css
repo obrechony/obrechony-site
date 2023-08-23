@@ -1,0 +1,51 @@
+#form {
+    position: relative;
+    margin-left: 20%;
+}
+
+.form_text {
+    font-size: 16px;
+}
+
+.vk_2 {
+    font-size: 12px;
+    margin-top: -0.2%;
+    font-weight: 100;
+}
+
+.input {
+    width: 400px;
+    height: 35px;
+    border-width: 1px;
+    border-radius: 20px;
+    text-indent: 15px;
+    font-size: 14px;
+}
+
+.inp_email._error {
+    height: 100px;
+}
+
+.inp_coment {
+    width: 400px;
+    height: 150px;
+    border-width: 1px;
+    border-radius: 20px;
+    resize: none;
+    box-sizing: border-box;
+    text-indent: 15px;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+
+.btnSend {
+    font-size: 24px;
+    margin-left: 77px;
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: #FFFFFF;
+}

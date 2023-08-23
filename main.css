@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Unbounded-ExtraLight";
+    font-style: normal;
+    font-weight: 400;
+  
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Unbounded-ExtraLight"),
+         /* Если не получилось, загрузит woff2 */
+         url("D:\website\obrechony-website\fonts\Unbounded\Unbounded-ExtraLight.ttf") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("D:\website\obrechony-website\fonts\Unbounded\Unbounded-ExtraLight.ttf") format("woff");
+}
+
+  
+  body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: "Unbounded-ExtraLight";
+  }
+  
+  ul {
+    font-family: "Unbounded-ExtraLight";
+  }
+  
+  :root {
+    --white: #ffffff;
+    --black: #000000;
+    --dirt_white: #F5F5F5;
+  }
+  
+  li {
+    list-style: circle; 
+  }
+  
+  .list {
+    list-style: square;
+  }
+
+.body {
+    --bg: var(--dirt_white);
+    --fontColor: var(--black);
+  }
+
+  .stage {
+    border-bottom: 3px solid #444;
+    display: flex;
+    height: 330px;
+    width: 100%;
+}
+.box {
+    align-self: flex-end;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    background-color: #F44336;
+    height: 200px;
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
+    width: 200px;
+}
+
+.bounce-2 {
+    animation-name: bounce-2;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce-2 {
+    0%   { transform: translateY(-0px); }
+    50%  { transform: translateY(-50px); }
+    100% { transform: translateY(-50px); }
+}
+
